@@ -10,13 +10,12 @@ import {
 } from "lucide-react";
 import logo from "./assets/logo.png";
 import "./App.css";
-import imagenabuelo from "./assets/imagenabuelo.png";
-import imagenabuelo2 from "./assets/imagenabuelo2.png";
-
+import imagenAbuelo from "./assets/imagenabuelo.png";
+import imagenAbuelo2 from "./assets/imagenabuelo2.png";
 
 function App() {
   return (
-    <div className="app" style={{ backgroundColor: "#ffffff" }}>
+    <div className="app" style={{ backgroundColor: "#F7F4FF" }}>
       {}
       <section className="hero">
         <div className="hero-content">
@@ -34,7 +33,8 @@ function App() {
           </p>
 
           <div className="hero-image">
-             <img src="imagenabuelo.png" alt="abuelo" />
+            {}
+            <img src={imagenAbuelo} alt="abuelo" />
           </div>
 
           <div className="hero-buttons">
@@ -67,17 +67,26 @@ function App() {
       </section>
 
       {}
-      <section className="solution">
+      <section className="solution" style={{ textAlign: "center" }}>
         <h2 className="section-title" style={{ color: "#2165CD" }}>
           Remind es tu solución
         </h2>
-        <p style={{ color: "#616876", fontSize: "1rem", marginTop: "0.5rem" }}>
+        <p
+          style={{
+            color: "#616876",
+            fontSize: "1rem",
+            marginTop: "0.5rem",
+            maxWidth: "600px",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+        >
           Una app clara, simple y diseñada para vos. Recordatorios confiables y
           tranquilidad para toda la familia.
         </p>
       </section>
 
-      {/* Features */}
+      {}
       <section className="features">
         <div className="feature-list">
           <div className="feature">
@@ -109,12 +118,13 @@ function App() {
           </div>
         </div>
         <div className="feature-image">
-          <img src="imagenabuelo2.png" alt="abuelo" />
+          {}
+          <img src={imagenAbuelo2} alt="abuelo" />
         </div>
       </section>
 
-      {/* Beneficios */}
-      <section className="benefits">
+      {}
+      <section className="benefits" style={{ textAlign: "center" }}>
         <div className="benefits-header">
           <h2
             style={{
@@ -130,6 +140,9 @@ function App() {
               color: "#616876",
               fontSize: "1rem",
               marginTop: "0.5rem",
+              maxWidth: "600px",
+              marginLeft: "auto",
+              marginRight: "auto",
             }}
           >
             Recupera tu independencia y disfruta de la tranquilidad que vos y tu
@@ -160,10 +173,13 @@ function App() {
           </div>
         </div>
 
-        <button className="download-btn">
-          <Download className="button-icon" />
-          Empieza ahora
-        </button>
+        {}
+        <div style={{ textAlign: "center", marginTop: "2rem" }}>
+          <button className="download-btn">
+            <Download className="button-icon" />
+            Empieza ahora
+          </button>
+        </div>
       </section>
     </div>
   );
