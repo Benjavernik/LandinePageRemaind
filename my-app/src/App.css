@@ -1,38 +1,257 @@
-.App {
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.app {
+  background-color: #F7F4FF;
+  color: #4B5563;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 3rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon-bg {
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-right: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero h1 {
+  font-size: 4rem;
+  color: #2165CD;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  max-width: 50rem;
+  margin: 0 auto 2rem;
+}
+
+.hero-image img {
+  border-radius: 2rem;
+  width: 100%;
+  max-height: 24rem;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hero-buttons button {
+  background-color: #1E4FD9;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  border-radius: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+.problems {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  color:#2165CD
+}
+
+.problem-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  width: 18rem;
+}
+
+.card.red {
+  background-color: #fee2e2;
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+.card.orange {
+  background-color: #fff7ed;
+  border-color: #ffedd5;
+  color: #c2410c;
+}
+
+.card.blue {
+  background-color: #eff6ff;
+  border-color: #dbeafe;
+  color: #1e40af;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.feature-list {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 2rem;
+}
+
+.feature {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.feature-icon {
+  background-color: #1E4FD9;
+  padding: 1rem;
+  border-radius: 1rem;
   color: white;
+  flex-shrink: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.feature-image img {
+  max-width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Benefits */
+.benefits {
+  padding: 4rem 2rem;
+}
+
+.benefit-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.benefit-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  width: 18rem;
+}
+
+.benefit-icon {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-icon.green { color: #22c55e; }
+.benefit-icon.red { color: #ef4444; }
+.benefit-icon.blue { color: #3b82f6; }
+
+.download-btn {
+  background-color: #1E4FD9;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  border-radius: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: none;
+}
+.features {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.features-container {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  max-width: 1100px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.features-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2165CD;
+  margin-bottom: 2rem;
+}
+
+.features-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.feature-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feature {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.feature-icon {
+  background-color: #1E4FD9;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.feature-image {
+  flex: 1;
+}
+
+.feature-image img {
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
