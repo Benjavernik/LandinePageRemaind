@@ -15,7 +15,7 @@ import imagenAbuelo from "./assets/imagenabuelo.png";
 function App() {
   return (
     <div className="app">
-      {/* HERO MEJORADO */}
+      {}
       <section className="hero">
         <div className="hero-left">
           <div className="logo-title">
@@ -44,9 +44,9 @@ function App() {
         </div>
       </section>
 
-      {/* SECCIÓN UNIDA: Problemas + Solución */}
+      {}
       <section className="problems-solution">
-        {/* IZQUIERDA */}
+        {}
         <div className="problems-left">
           <h2 className="section-title">¿Te resulta familiar?</h2>
           <div className="problem-cards vertical">
@@ -65,44 +65,48 @@ function App() {
           </div>
         </div>
 
-        {/* DERECHA */}
+        {}
         <div className="solution-right">
           <h2 className="section-title" style={{ color: "#2165CD" }}>
             Remind es tu solución
           </h2>
           <div className="feature-list simple">
-            <div className="feature">
-              <div className="feature-icon">
-                <Smartphone />
-              </div>
-              <div>
-                <h3>Interfaz súper simple</h3>
-                <p>Botones grandes, letras claras y navegación intuitiva</p>
-              </div>
-            </div>
-            <div className="feature">
-              <div className="feature-icon">
-                <Clock />
-              </div>
-              <div>
-                <h3>Recordatorios inteligentes</h3>
-                <p>Alertas por voz, vibración y pantalla para nunca olvidar</p>
-              </div>
-            </div>
-            <div className="feature">
-              <div className="feature-icon">
-                <Heart />
-              </div>
-              <div>
-                <h3>Pensado para ti</h3>
-                <p>Diseñado específicamente para adultos mayores</p>
-              </div>
-            </div>
-          </div>
+  <div className="feature">
+    <div className="feature-icon">
+      <Smartphone size={45} />
+    </div>
+    <div>
+      <h3>Interfaz super simple</h3>
+      <p>Botones grandes, letras claras y navegación intuitiva</p>
+    </div>
+  </div>
+
+  <div className="feature">
+    <div className="feature-icon">
+      <Clock size={45} />
+    </div>
+    <div>
+      <h3>Recordatorios inteligentes</h3>
+      <p>Alertas por voz, vibración y pantalla para nunca olvidar</p>
+    </div>
+  </div>
+
+  <div className="feature">
+    <div className="feature-icon">
+      <Heart size={45} />
+    </div>
+    <div>
+      <h3>Pensado para ti
+</h3>
+      <p>Diseñado específicamente para adultos mayores</p>
+    </div>
+  </div>
+</div>
+
         </div>
       </section>
 
-      {/* BENEFITS (queda igual porque te encanta el tamaño 👌) */}
+      {}
       <section className="benefits" style={{ textAlign: "center" }}>
         <div className="benefits-header">
           <h2
